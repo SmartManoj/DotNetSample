@@ -5,5 +5,5 @@ phases:
       - echo Restore started on `date`
   build:
     commands:
-      - echo Build started on `date`
+      - echo $CBN
 
