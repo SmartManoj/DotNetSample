@@ -5,5 +5,5 @@ phases:
       - echo Restore started on `date`
   build:
     commands:
-      - echo $CBN
+      - echo #{BuildVariables.CODEBUILD_BUILD_NUMBER}
 
