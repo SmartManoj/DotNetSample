@@ -10,10 +10,6 @@ phases:
     commands:
       - echo Restore started on `date`
       - export PATH="$PATH:/root/.dotnet/tools"
-      - pip install --upgrade awscli
-      - cd myDotnet/src/myDotnet
-      - dotnet clean 
-      - dotnet restore
   build:
     commands:
       - echo Build started on `date`
