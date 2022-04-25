@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - export PATH="$PATH:/root/.dotnet/tools"
+      - export CBN=$CODEBUILD_BUILD_NUMBER
   build:
     commands:
       - echo Build started on `date`
