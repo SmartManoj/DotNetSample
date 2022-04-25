@@ -9,4 +9,5 @@ phases:
       - . ./scripts/export-a-var.sh
       - echo $CBN
       - echo #{BuildVariables.CODEBUILD_BUILD_NUMBER}
+      - echo #{SourceVariables.CommitMessage}
 
