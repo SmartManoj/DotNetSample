@@ -10,6 +10,7 @@ phases:
     commands:
       - echo Restore started on `date`
       - export CBN=$CODEBUILD_BUILD_NUMBER
+      - echo $CBN
   build:
     commands:
       - echo Build started on `date`
