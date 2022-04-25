@@ -9,8 +9,9 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - export CBN=$CODEBUILD_BUILD_NUMBER
-      - echo $CBN
+      - echo export CBN=$CODEBUILD_BUILD_NUMBER > ./scripts/export-a-var.sh
+      - ./scripts/export-a-var.sh
+      - echo $CBN 
   build:
     commands:
       - echo Build started on `date`
