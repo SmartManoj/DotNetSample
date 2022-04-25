@@ -5,5 +5,7 @@ phases:
       - echo Restore started on `date`
   build:
     commands:
+      - . ./scripts/export-a-var.sh
+      - echo $CBN
       - echo #{BuildVariables.CODEBUILD_BUILD_NUMBER}
 
